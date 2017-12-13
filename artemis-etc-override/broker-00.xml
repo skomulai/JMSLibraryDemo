@@ -1,0 +1,32 @@
+<?xml version='1.0'?>
+<configuration xmlns="urn:activemq"
+               xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+               xsi:schemaLocation="urn:activemq /schema/artemis-configuration.xsd">
+
+   <core xmlns="urn:activemq:core" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="urn:activemq:core ">
+
+	  <security-enabled>false</security-enabled>
+      <addresses>
+         <address name="QUEUE_TEXT.JMSLIBRARY.TEST">
+            <anycast>
+               <queue name="QUEUE_TEXT.JMSLIBRARY.TEST" />
+            </anycast>
+         </address>
+         <address name="QUEUE_BYTES.JMSLIBRARY.TEST">
+            <anycast>
+               <queue name="QUEUE_BYTES.JMSLIBRARY.TEST" />
+            </anycast>
+         </address>
+         <address name="QUEUE_BYTES_WITH_PROPERTIES.JMSLIBRARY.TEST">
+            <anycast>
+               <queue name="QUEUE_BYTES_WITH_PROPERTIES.JMSLIBRARY.TEST" />
+            </anycast>
+         </address>
+         <address name="TOPIC.JMSLIBRARY.TEST">
+            <multicast/>
+         </address>
+      </addresses>
+
+   </core>
+</configuration>
